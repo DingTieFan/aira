@@ -20,7 +20,7 @@ page = st.sidebar.radio("Navigation", ["Data Loader", "Data Manager"])
 if page == "Data Loader":
     # File uploader section
     st.header("Data Source")
-    st.write(st.session_state)
+    # st.write(st.session_state)
 
     # Upload files
     app_file = st.file_uploader("Application Table", type=["csv"])
@@ -72,7 +72,7 @@ if page == "Data Loader":
 
 if page == "Data Manager":
     st.header("file Manager")
-    st.write(st.session_state)
+    # st.write(st.session_state)
     
     storage_path_obj = Path(storage_path)
     files = list_files(storage_path_obj)
